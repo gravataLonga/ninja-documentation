@@ -6,16 +6,19 @@ weight: 1
 # geekdocHidden: false
 ---
 
-## Homebrew  
+{{< tabs "uniqueid" >}}
+    {{< tab "macOS" >}}
+## Homebrew
 
 ```sh 
 brew tap gravatalonga/ninja-lang
 brew install ninja-lang
 ```
+    {{< /tab >}}
+    {{< tab "Linux" >}}
+## Rpm / Yum
 
-## Rpm / Yum  
-
-To enable, add the following file `/etc/yum.repos.d/fury.repo`:  
+To enable, add the following file `/etc/yum.repos.d/fury.repo`:
 
 ```ini 
 [fury]
@@ -24,14 +27,14 @@ baseurl=https://yum.fury.io/gravatalonga/
 enabled=1
 gpgcheck=0 
 ```  
-Check if correctly created `yum --disablerepo=* --enablerepo=fury list available`  
+Check if correctly created `yum --disablerepo=* --enablerepo=fury list available`
 
-To install you only need run following command:  
+To install you only need run following command:
 ```sh
 yum install ninja-lang  
-```
-
-## APT  
+```  
+  
+## APT
 
 To configure apt access, create a following file `/etc/apt/sources.list.d/fury.list` with content of :
 
@@ -50,16 +53,28 @@ and them you can install
 ```bash  
 sudo apt install ninja-lang
 ```  
+    {{< /tab >}}
+    {{< tab "Windows" >}}
+We are working to be available for [chocolatey](https://chocolatey.org/)  
 
-## Manual Download  
+But for the moment we have available via manual [installation](https://github.com/gravataLonga/ninja/releases). 
+
+    {{< /tab >}}
+
+    {{< tab "Manual">}}
+## Manual Download
 
 Download from [github](https://github.com/gravataLonga/ninja/releases)
 
 
-## Manual Installation  
+## Source Code  
 
 ```bash    
 git clone https://github.com/gravataLonga/ninja
 cd ninja
 go build -o ninja-lang
 ```   
+
+    {{< /tab>}}
+{{< /tabs >}}
+
