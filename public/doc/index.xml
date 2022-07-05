@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting Started on Ninja Programming Language</title>
-    <link>https://ninja.jonathan.pt/</link>
+    <link>https://ninja.jonathan.pt/doc/</link>
     <description>Recent content in Getting Started on Ninja Programming Language</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://ninja.jonathan.pt/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://ninja.jonathan.pt/doc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
       <link>https://ninja.jonathan.pt/doc/installation/</link>
